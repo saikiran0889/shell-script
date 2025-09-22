@@ -9,4 +9,4 @@ sum=$(($num1+$num2+$NAME))
 echo "total sum : ${sum}"
 
 LEADERS=("modi" "putin" "trunp")
-echo "leaders names= ${LEADERS@}"
+echo "leaders names= ${LEADERS[@]}"
