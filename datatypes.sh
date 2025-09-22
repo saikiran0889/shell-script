@@ -10,3 +10,5 @@ echo "total sum : ${sum}"
 
 LEADERS=("modi" "putin" "trunp")
 echo "leaders names= ${LEADERS[@]}"
+echo "leaders names= ${LEADERS[0]}"
+echo "leaders names= ${LEADERS[2]}"
