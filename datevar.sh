@@ -5,4 +5,4 @@ sleep 20
 endtime=$(date +%s)
 totalexecutiontime=$(($endtime-$starttime))
 
-echo "print the date=$totalexectiontime :seconds"
+echo "print the date=$totalexecutiontime :seconds"
