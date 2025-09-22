@@ -8,3 +8,5 @@ echo "current working diectory: $PWD"
 echo "who is running the scipt: $USER"
 echo "Home die=rectory: $HOME"
 echo "PID of this script: $$"
+sleep 20
+echo "PID of last command executed: $!"
