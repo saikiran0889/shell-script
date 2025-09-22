@@ -1,7 +1,7 @@
 #!/bin/bash
 
 starttime=$(date +%s)
-sleep 20 &
+sleep 20 
 endtime=$(date +%s)
 totalexecutiontime=$(($starttime-$endtime))
 
