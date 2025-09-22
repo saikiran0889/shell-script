@@ -6,4 +6,3 @@ endtime=$(date +%s)
 totalexecutiontime=$(($endtime-$starttime))
 
 echo "print the date=$totalexecutiontime :seconds"
-echo "script name: $0"
