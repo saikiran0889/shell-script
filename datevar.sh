@@ -3,6 +3,6 @@
 starttime=$(date +%s)
 sleep 20 &
 endtime=$(date +%s)
-totalexecutiontime=$($starttime-$endtime)
+totalexecutiontime=$(($starttime-$endtime))
 
 echo "print the date=$totalexectiontime :seconds"
