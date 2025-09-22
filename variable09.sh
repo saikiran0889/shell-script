@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-trump=$us
-modi=$in
+us=$tump
+in=$modi
 
 echo "$us::hi $in"
 echo "$in::hi $us how r u?"
