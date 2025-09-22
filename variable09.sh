@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-us=$tump
-in=$modi
+person1=$tump
+person2=$modi
 
-echo "$us:: hi $in"
-echo "$in:: hi $us how r u?"
-echo "$us:: i am good, how r u $in"
-echo "$in:: i am good, thankss"
+echo "$person1:: hi $person2"
+echo "$person2:: hi $person1 how r u?"
+echo "$person1:: i am good, how r u $person2"
+echo "$person2:: i am good, thankss"
