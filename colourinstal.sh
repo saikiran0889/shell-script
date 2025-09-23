@@ -20,6 +20,19 @@ echo -e "$Y succussfully $2 installed $N"
 fi
 }
 
+dnf list install mysql -y
+
+if [ $? -ne 0 ]; then
+dnf install mysql -y
+validate $? "MYSQL"
+else
+    echo "MYSQL is already installed $Y skipped $N"
+fi
+
+
+
+
+
 dnf install mysql -y
 validate $? "MYSQL"
 
