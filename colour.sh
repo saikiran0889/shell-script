@@ -4,6 +4,6 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 
-echo -e "$Y hello world$n"
+echo -e "$Y hello world$N"
 
 echo "hi sai kiran"
