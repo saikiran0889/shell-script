@@ -29,7 +29,14 @@ else
     echo -e "MYSQL is already installed $Y skipped $N"
 fi
 
+dnf list install nginx -y
 
+if [ $? -ne 0 ]; then
+dnf install mysql -y
+validate $? "MYSQL"
+else
+    echo -e "nginx is already installed $G skipped $N"
+fi
 
 
 
