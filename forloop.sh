@@ -31,4 +31,5 @@ fi
 for package in $@
 do 
 echo "enter package : $package"
+dnf list installed $package &>>logfile
 done
