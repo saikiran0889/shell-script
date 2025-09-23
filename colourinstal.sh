@@ -39,9 +39,3 @@ else
 fi
 
 
-
-dnf install mysql -y
-validate $? "MYSQL"
-
-dnf install nginx -y
-validate $? "nginx"
