@@ -9,11 +9,11 @@ fi
 
 validate(){
 
-    if [ $? -ne 0 ];then
-echo "error while installing mysql"
+    if [ $1 -ne 0 ];then
+echo "error while installing $2"
 exit 1
     else
-echo "succussfully mysql installed"
+echo "succussfully $2 installed"
 fi
 }
 
