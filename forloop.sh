@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-logsfolder="/var/log/shell-script.txt"
+logsfolder="/var/log/shell-script"
 scriptname=$( echo $0 | cut -d "." -f1 )
 logfile="$logsfolder/$scriptname.log"
 
