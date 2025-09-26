@@ -6,7 +6,7 @@ set -e
 # echo "this is error messag $LINENO, command is $BASH_COMMAND"
 # }
 
-trap echo "this is error messag $LINENO, command is $BASH_COMMAND" ERR
+trap 'echo "this is error messag $LINENO, command is $BASH_COMMAND"' ERR
 
 
 
