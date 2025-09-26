@@ -3,7 +3,7 @@ set -e
 
 
 error (){
-echo "this is errorr messag"
+echo "this is error messag"
 }
 
 trap error ERR
