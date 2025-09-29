@@ -25,7 +25,7 @@ fi
 
 
 usage(){
-    echo "usage :: "
+    echo "usage:: sudo sh backup.sh <source_dir> <dest_dir> <date> "
     exit 1
 }
 
