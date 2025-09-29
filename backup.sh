@@ -24,7 +24,8 @@
 # *****************************
 
 source_dir=$1
-dest_dir=$2
+dest_dir=$2 
+days=${3:-14}  # if you have provided any input it will consider as last 14 days
 
 usage(){
     echo "usage:: sudo sh backup.sh <source_dir> <dest_dir> <date> "
@@ -51,4 +52,4 @@ echo "$dest_dir doesn't exits"
 exit 1
 fi
 
-# find $source_dir -r "*.lo"
+files=$(find $source_dir -name "*.log" -type f -mtime +14)
