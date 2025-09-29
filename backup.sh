@@ -38,14 +38,14 @@ fi
 source_dir=/home/ec2-user/source_dir
 
 if [ ! -d $source_dir ]; then
-echo "source dir doesn't exits"
+echo "$source_dir doesn't exits"
 exit 1
 fi
 
 dest_dir=/home/ec2-user/dest_dir
 
 if [ ! -d $dest_dir ]; then
-echo "destination dir doesn't exits"
+echo "$dest_dir doesn't exits"
 exit 1
 fi
 
