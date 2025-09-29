@@ -56,6 +56,7 @@ files=$(find $source_dir -name "*.log" -type f -mtime +14)
 
 if [ ! -z ${files} ]; then
 echo "files found"
+timestamp=(date +%F-%H-%M)
 else
 echo "files doesn't exist"
 fi 
