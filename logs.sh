@@ -14,9 +14,11 @@ mkdir -p $logsfolder
 echo "script started executed : $(date)"
 
 
-if [ $USERID -ne 0 ]; then
-echo -e "$R ERROR: You are not in root access $Y"
-exit 1
+source_dir=/home/ec2-user/app-logs
+
+if [ ! -d $source_dir ]; then
+echo "$source_dir doesn't exist"
 fi
 
-mkdir -p $logsfolder
+
+delete_files=$(find $source_dir -name "*.log" -mtime +14)
