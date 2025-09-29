@@ -52,11 +52,13 @@ echo "$dest_dir doesn't exits"
 exit 1
 fi
 
-files=$(find $source_dir -name "*.log" -type f -mtime +14)
+files=$(find $source_dir -name "*.log" -type f -mtime +$days)
 
 if [ ! -z ${files} ]; then
-echo "files found"
+echo "files found:$files"
 timestamp=(date +%F-%H-%M)
+zipfilename="$dest_dir/app-logs-$timestamp.zip"
+echo "zipfilename is: $zipfilename"
 else
 echo "files doesn't exist"
 fi 
