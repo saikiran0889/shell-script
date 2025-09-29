@@ -13,7 +13,7 @@
 # echo "done!"
 
 
-while IFS = read -r line;
+while IFS= read -r line;
 do
 echo "printing: $LINE"
 done < text.sh
