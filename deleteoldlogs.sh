@@ -16,4 +16,6 @@ filesdeleted=$(find $source_dir -name "*.log" -mtime +14 )
 while IFS= read -r file;
 do
 echo "dleteing log: $file"
+rm -rf $file
+echo "deleted the file: $file"
 done <<< $filesdeleted
