@@ -35,18 +35,18 @@ fi
 
 
 
-source_dir=/home/ec2-user/source_dir
+# source_dir=/home/ec2-user/source_dir
 
-if [ ! -d $source_dir ]; then
-echo "$source_dir doesn't exits"
-exit 1
-fi
+# if [ ! -d $source_dir ]; then
+# echo "$source_dir doesn't exits"
+# exit 1
+# fi
 
-dest_dir=/home/ec2-user/dest_dir
+# dest_dir=/home/ec2-user/dest_dir
 
-if [ ! -d $dest_dir ]; then
-echo "$dest_dir doesn't exits"
-exit 1
-fi
+# if [ ! -d $dest_dir ]; then
+# echo "$dest_dir doesn't exits"
+# exit 1
+# fi
 
-# find $source_dir -r "*.lo"
+# # find $source_dir -r "*.lo"
