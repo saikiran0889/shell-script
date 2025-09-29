@@ -9,11 +9,11 @@ exit 1
 fi
 
 
-filesdeleted=$(find $source_dir -name "*.log" +14 )
+filesdeleted=$(find $source_dir -name "*.log" -mtime +14 )
 
 
 
 while IFS= read -r file;
 do
 echo "printing: $file"
-done <<< set.sh
+done <<< $filesdeleted
