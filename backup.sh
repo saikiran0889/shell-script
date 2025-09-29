@@ -35,6 +35,18 @@ fi
 
 
 
-# source_dir=/home/ec2-user/app-logs
+source_dir=/home/ec2-user/source_dir
+
+if [ ! -d $source_dir ]; then
+echo "source dir doesn't exits"
+exit 1
+fi
+
+dest_dir=/home/ec2-user/dest_dir
+
+if [ ! -d $dest_dir ]; then
+echo "destination dir doesn't exits"
+exit 1
+fi
 
 # find $source_dir -r "*.lo"
