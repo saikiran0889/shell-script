@@ -1,0 +1,19 @@
+#!/bin/bash
+
+source_dir=/var/log/app-logs
+
+if [ ! -d $source_dir ]; then
+
+echo "source file doesn't exist: $source_dir"
+exit 1
+fi
+
+
+
+
+
+
+while IFS= read -r line;
+do
+echo "printing: $line"
+done < set.sh
