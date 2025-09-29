@@ -16,4 +16,4 @@
 while IFS= read -r line;
 do
 echo "printing: $line"
-done < text1.sh
+done < set.sh
