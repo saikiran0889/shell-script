@@ -15,5 +15,5 @@
 
 while IFS= read -r line;
 do
-echo "printing: $LINE"
-done < text.sh
+echo "printing: $Line"
+done < text1.sh
