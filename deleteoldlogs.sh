@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source_dir=/var/log/app-logs
+source_dir=/var/log/app-log
 
 if [ ! -d $source_dir ]; then
 
