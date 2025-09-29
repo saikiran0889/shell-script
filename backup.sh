@@ -23,6 +23,8 @@
 
 # *****************************
 
+source_dir=$1
+dest_dir=$2
 
 usage(){
     echo "usage:: sudo sh backup.sh <source_dir> <dest_dir> <date> "
