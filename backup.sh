@@ -53,3 +53,9 @@ exit 1
 fi
 
 files=$(find $source_dir -name "*.log" -type f -mtime +14)
+
+if [ ! -z ${files} ]; then
+echo "files found"
+else
+echo "files doesn't exist"
+fi 
