@@ -16,4 +16,4 @@
 while IFS = read -r line;
 do
 echo "printing"
-done <test.sh
+done <text.sh
