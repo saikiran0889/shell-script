@@ -9,7 +9,7 @@ exit 1
 fi
 
 
-
+filesdeleted=$(find $source_dir -name "*.log" +14 )
 
 
 
