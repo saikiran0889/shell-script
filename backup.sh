@@ -59,7 +59,7 @@ echo "files found:$files"
 timestamp=(date +%F-%H-%M)
 zipfilename="$dest_dir/app-logs-$timestamp.zip"
 echo "zipfilename is: $zipfilename"
-echo $files | ZIP -@ -j "$zipfilename"
+find $source_dir -name "*.log" -type f -mtime +$days | ZIP -@ -j "$zipfilename"
 else
 echo "files doesn't exist"
 fi 
