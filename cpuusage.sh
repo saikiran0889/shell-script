@@ -10,7 +10,7 @@ do
 usage=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
 partition=$(echo $line | awk '{print $6}')
 if [ $usage -ge $disk_treshold ]; then
-message="high disk usage $partition: $usage %"
+message+="high disk usage $partition: $usage %"
 fi
 done <<< $disk_usage
 
