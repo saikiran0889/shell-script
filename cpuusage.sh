@@ -2,7 +2,7 @@
 
 disk_usage=$(df -hT | grep -v Filesystem)
 disk_treshold=2
-ipaddress=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
+ipaddress=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4)
 message=""
 while IFS= read -r line
 do
