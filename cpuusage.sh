@@ -14,4 +14,4 @@ message+="high disk usage $partition: $usage % \n"
 fi
 done <<< $disk_usage
 
-echo "message body: $message"
+echo -e "message body: $message"
